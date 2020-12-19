@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="utf-8">
+    <meta name="description" content="IRHS Services">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- Title-->
+    <title>About | IRHS Services</title>
+    <!-- Favicon-->
+    <link rel="icon" href="img/favicon.png">
+    <!-- Core Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+      /* Float four columns side by side */
+        .column {
+          float: left;
+          width: 25%;
+          padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {margin: 0 -5px;}
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+          }
+        }
+
+        /* Style the counter cards */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          padding: 16px;
+          text-align: center;
+          background-color: #f1f1f1;
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+          border-radius: 8px
+        }
+        .card h3, p{
+          color: #5d0c1d;
+        }
+        .card i{
+          color: #CAB089;
+        }
+        .sub-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .teams {
+            margin: 10px;
+            padding: 22px;
+            max-width: 30%;
+            cursor: pointer;
+            transition: 0.4s;
+            box-sizing: border-box;
+        }
+
+        .teams:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            border-radius: 16px;
+            transition: 1s;
+        }
+
+        .teams img {
+            width: 400px;
+            height: 300px;
+            cursor: default; 
+        } 
+
+        .name {
+            padding: 12px;
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center; 
+            cursor: text;
+            color: #5d0c1d;
+        }
+
+        .desig {
+            font-style: normal;
+            color: #333;
+            text-align: center;
+            cursor: text;
+        } 
+
+        .social-links {
+            margin: 14px;
+            text-align: center;
+        }
+
+        .social-links a {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            transition: .4s;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.8);
+        }
+
+        .social-links a i {
+            color: #5d0c1d;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .teams {
+                max-width: 100%;
+            }
+        }
+
+    </style>
+  </head>
+  <body>
+    <!-- Preloader-->
+    <div class="preloader" id="preloader">
+      <div class="spinner-grow text-light" role="status"><span class="sr-only">Loading...</span></div>
+    </div>
+    <!-- Header Area-->
+    <header class="header-area header2" style="background-color: #5d0c1d">
+      <div class="container">
+        <div class="classy-nav-container breakpoint-off">
+          <nav class="classy-navbar navbar2 justify-content-between" id="saasboxNav" style="margin-top: 10px;margin-bottom: 15px">
+            <!-- Logo-->
+            <a class="nav-brand mr-5" href="index.html"><img src="img/logo.png" alt="logo" width="200" height="200"></a>
+            <!-- Navbar Toggler-->
+            <div class="classy-navbar-toggler"><span class="navbarToggler"><span></span><span></span><span></span><span></span></span></div>
+            <!-- Menu-->
+            <div class="classy-menu">
+              <!-- close btn-->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+              <!-- Nav Start-->
+              <div class="classynav">
+                <ul id="corenav">
+                  <li ><a href="./index.html" style="color: #fff;background-color: #5d0c1d">Home</a></li>
+                  <li><a href="./about.html" style="color: #fff;background-color: #5d0c1d">About Us</a></li>
+                  <li><a href="./shop.html" style="color: #fff;background-color: #5d0c1d">Pre-Order</a></li>
+                  <li><a href="./404.html" style="color: #fff;background-color: #5d0c1d;">Blog</a></li>
+                  <li><a href="contact.html" style="color: #fff;background-color: #5d0c1d">Contact Us</a></li>
+                </ul> 
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+ 
+ 
+
+  <!-- About Area-->
+    <section id="about" class="about-area about2 section-padding-120"> 
+      <div class="container">
+        <div class="row align-items-center justify-content-md-center justify-content-lg-between">
+          <!-- About Thumbnail Area-->
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="aboutUs-thumbnail mt-120 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                <img class="w-100" src="img/bg-img/about.jpg" alt="" style="width: 400px;height: 400px"></div>
+          </div>
+          <!-- About Us Content Area-->
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="aboutUs-content mt-120 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
+              <div class="section-heading mb-5"> 
+                <h2 style="color: #5d0c1d">About IRHS Services</h2>
+                <p style="text-align: justify;color: #333;">Welcome to IRHS Services, where we develop products based on touch-free technology addressing to societal concerns. We are dedicated to giving you the very best of our quality products and services with the assurance of customer satisfaction.</p>
+                <p style="text-align: justify;color: #333;margin-top: 10px">Founded in 2020 by a bunch of engineering graduates with a long term vision, IRHS Services creates solutions which not only offer luxury, but also ensure affordability and reliability to individuals in various health-care and non health-care settings.</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+          <div class="sub-container mt-5">
+                  <div class="teams">
+                      <p class="text-center"><img src="img/mission.png" alt="" style="width: 100px; height: 100px"></p>
+                      <div class="name" style="font-size: 24px;margin-top: 25px">Our Mission</div>
+                      <div class="desig" style="font-size: 20px">To set impressive benchmarks by developing cost-effective contactless switches for electrical appliances across various settings.</div> 
+                  </div>
+
+                  <div class="teams">
+                      <p class="text-center"><img src="img/vision.png" alt="" style="width: 100px; height: 100px"></p>
+                      <div class="name" style="font-size: 24px;margin-top: 25px">Our Vision</div>
+                      <div class="desig" style="font-size: 20px">To synthesize a safe and touch-free environment by providing the affordable luxury of automated systems.</div> 
+                  </div>
+
+                  <div class="teams">
+                      <p class="text-center"><img src="img/strategy.png" alt="" style="width: 100px; height: 100px"></p>
+                      <div class="name" style="font-size: 24px;margin-top: 25px">Our Strategy</div>
+                      <div class="desig" style="font-size: 20px">We commit to set standards and strive to make improvements on the team, services and the products.</div> 
+                  </div>
+              </div>
+    </section>
+ 
+
+
+    <section class="about-area about3 section-padding-120 bg-gray">
+      <div class="container">
+        <div class="section-heading text-center"><i class="fa fa-arrow-circle-right" style="background-color: #5d0c1d"></i>
+              <h2 style="color: #CAB089">Our <span style="color: #5d0c1d">Values</span></h2>
+              <p style="color: #333">What we believe is important and cannot be compromised for .</p>
+            </div>
+        <div class="hero--content--area">
+          <div class="row justify-content-center g-4">
+            <!-- Single Hero Card-->
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="100ms" data-wow-duration="1000ms">
+                <div class="card-body">
+                  <img src="img/bg-img/quality-first.png" width="50%">
+                  <h5 class="mt-2" style="color:#5d0c1d">Quality FIrst</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Single Hero Card-->
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="300ms" data-wow-duration="1000ms">
+                <div class="card-body">
+                  <img src="img/bg-img/going-extra-mile.png" width="50%">
+                  <h5 class="mt-2" style="color:#5d0c1d">Going Extra Mile</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Single Hero Card-->
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="500ms" data-wow-duration="1000ms">
+                <div class="card-body">
+                  <img src="img/bg-img/vulnerable.png" width="50%">
+                  <h5 class="mt-2" style="color:#5d0c1d">Being Vulnerable</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Single Hero Card-->
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="700ms" data-wow-duration="1000ms">
+                <div class="card-body">
+                  <img src="img/bg-img/compassionate.png" width="50%">
+                  <h5 class="mt-2" style="color:#5d0c1d">Compassionate</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Single Hero Card-->
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="100ms" data-wow-duration="1000ms">
+                <div class="card-body">
+                  <img src="img/bg-img/mission-driven.png" width="50%">
+                  <h5 class="mt-2" style="color:#5d0c1d">Mission Driven</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Single Hero Card-->
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="300ms" data-wow-duration="1000ms">
+                <div class="card-body">
+                  <img src="img/bg-img/transparency.png" width="50%">
+                  <h5 class="mt-2" style="color:#5d0c1d">Transparency</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Single Hero Card-->
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="500ms" data-wow-duration="1000ms">
+                <div class="card-body">
+                  <img src="img/bg-img/customer-support.png" width="50%">
+                  <h5 class="mt-2" style="color:#5d0c1d">24*7 Support</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Single Hero Card-->
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="700ms" data-wow-duration="1000ms">
+                <div class="card-body">
+                  <img src="img/bg-img/professionalism.png" width="50%">
+                  <h5 class="mt-2" style="color:#5d0c1d">Professionalism</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="team-IRHS">
+        <div class="container">
+          <div class="section-heading text-center"><i class="fa fa-arrow-circle-right" style="background-color: #5d0c1d"></i>
+              <h2 style="color: #CAB089">Our <span style="color: #5d0c1d">Team</span></h2>
+              <p>The utmost efficiency and implementation comes when you combine our expertise and outstanding customer service.</p>
+            </div>
+            <div class="sub-container">
+                  <div class="teams">
+                      <img src="img/team/profile1.jpg" alt="" style="border-radius: 50%">
+                      <div class="name">Dhanush Binu</div>
+                      <div class="desig">Co-Founder & Co-CEO</div>
+
+                      <div class="social-links"> 
+                          <a href="https://www.linkedin.com/in/dhanush-binu-691798a3/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          <a href="mailto:dhanush.binu@irhsservices.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                      </div>
+                  </div>
+
+                  <div class="teams">
+                      <img src="img/team/profile2.jpg" alt="" style="border-radius: 50%">
+                      <div class="name">Anup Premaraj Kamath</div>
+                      <div class="desig">Co-Founder & Co-CEO</div>
+
+                      <div class="social-links">
+                          <a href="https://www.linkedin.com/in/anup-kamath-524183184/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          <a href="mailto:anup.kamath@irhsservices.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="sub-container">
+                  <div class="teams">
+                      <img src="img/team/profile4.jpg" alt="" style="border-radius: 50%">
+                      <div class="name">Gaurav Basu</div>
+                      <div class="desig">Chief Marketing Officer</div>
+
+                      <div class="social-links">
+                          <a href="https://www.linkedin.com/in/gaurav-basu-815b171a4/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          <a href="mailto:gaurav.basu@irhsservices.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                      </div>
+                  </div>
+
+                  <div class="teams">
+                      <img src="img/team/profile5.jpg" alt="" style="border-radius: 50%">
+                      <div class="name">Somya Gupta</div>
+                      <div class="desig">Chief Technology Officer</div>
+
+                      <div class="social-links">
+                          <a href="https://www.linkedin.com/in/somya-gupta-93a1061b8/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          <a href="mailto:somya.gupta@irhsservices.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                      </div>
+                  </div>
+
+                  <div class="teams">
+                      <img src="img/team/profile6.jpg" alt="" style="border-radius: 50%">
+                      <div class="name">Ratul Sarkar</div>
+                      <div class="desig">Associate Web Designer</div>
+
+                      <div class="social-links">
+                          <a href="https://www.linkedin.com/in/ratul-sarkar-501176167/"><i class="fa fa-linkedin"></i></a>
+                          <a href="mailto:ratul.sarkar@irhsservices.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                          <a href="http://alluring-wizard.tech/" target="_blank"><i class="fa fa-dribbble"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+             
+
+        </div>
+    </section>
+
+ 
+    <div class="container">
+      <div class="border-bottom"></div>
+    </div>
+
+    <!-- Footer Area-->
+    <footer class="footer-area footer2 section-padding-120" style="background-color: #CAB089">
+      <div class="container">
+        <div class="row justify-content-between">
+          <!-- Footer Widget Area-->
+          <div class="col-12 col-sm-10 col-lg-3">
+            <div class="footer-widget-area mb-70"><a class="d-block mb-4" href="index.html"><img src="img/footer-logo.png" alt="logo" width="200" height="200"></a>
+              <p style="color: #333;font-weight: bold;">We are passionate about our work and take measures in providing clients with fervent, honest opinions and perception that takes their business growth to another level.</p> 
+            </div>
+          </div>
+          <!-- Footer Widget Area-->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="footer-widget-area mb-70">
+              <h5 class="widget-title" style="color: #333;font-weight: bold;">Quick Links</h5>
+              <ul>
+                <li><a href="./about.html" style="color: #333;font-weight: bold;">About</a></li>
+                <li><a href="./shop.html" style="color: #333;font-weight: bold;">Pre-order</a></li>
+                <li><a href="./blog.html" style="color: #333;font-weight: bold;">Blogs</a></li>
+                <li><a href="./contact.html" style="color: #333;font-weight: bold;">Help &amp; Support</a></li> 
+              </ul>
+            </div>
+          </div>
+          <!-- Footer Widget Area-->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="footer-widget-area mb-70">
+              <h5 class="widget-title" style="color: #333;font-weight: bold;">Reach Us At</h5>
+              <ul>
+                <li><a href="javaScript:Void(0)" style="color: #333;font-weight: bold;"><i class="fa fa-home" style="color: #333;font-weight: bold;"></i>&nbsp;SVNIT Campus, Ichchhanath, Surat-395007, Gujarat, India</a></li>
+                <li><a href="tel:6355225788" style="color: #333;font-weight: bold;"><i class="fa fa-phone" style="color: #333;font-weight: bold;"></i> (+91) 63552 25788</a></li>
+                <li><a href="mailto:hello@irhsservices.com" style="color: #333;font-weight: bold;"><i class="fa fa-envelope" style="color: #333;font-weight: bold;"></i> Write to IRHS</a></li> 
+                <li><a href="https://goo.gl/maps/vFQaZPD4GWC13BJVA" style="color: #333;font-weight: bold;"><i class="fa fa-map-marker" style="color: #333;font-weight: bold;"></i> Walk in here</a></li> 
+              </ul>
+            </div>
+          </div>
+          <!-- Footer Widget Area-->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="footer-widget-area mb-70">
+              <h5 class="widget-title" style="color: #333;font-weight: bold;">More Info</h5>
+              <ul>
+                <li><a href="./disclaimer.html" style="color: #333;font-weight: bold;">Disclaimer</a></li>
+                <li><a href="./privacy-policy.html" style="color: #333;font-weight: bold;">Privacy Policy</a></li>
+                <li><a href="./terms-&-conditions.html" style="color: #333;font-weight: bold;">Terms &amp; Conditions</a></li>   
+              </ul> 
+              <div class="footer-social-icon d-flex align-items-center mt-3">
+                <a href="https://www.facebook.com/IRHSServices" data-toggle="tooltip" data-placement="top" title="Facbook"><i class="fa fa-facebook" style="color: #333;font-weight: bold;"></i></a>
+                <a href="https://twitter.com/IrhsServices" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" style="color: #333;font-weight: bold;"></i></a>
+                <a href="https://www.instagram.com/irhsservices/" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram" style="color: #333;font-weight: bold;"></i></a>
+                <a href="https://www.linkedin.com/company/irhs-services/?viewAsMember=true" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin" style="color: #333;font-weight: bold;"></i></a>
+                <a href="https://www.youtube.com/channel/UCRg9we-9ldmDFRX80Pdy4xA" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fa fa-youtube" style="color: #333;font-weight: bold;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-5">
+            <!-- Copywrite Text-->
+            <div class="footer--content-text"> 
+              <p class="copy-right" style="color: #333;font-weight: bold;">&copy; <script>document.write(new Date().getFullYear());</script> IRHS Services | All Rights Reserved</p>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- All JavaScript Files-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/default/classy-nav.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/default/jquery.scrollup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/default/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animatedheadline.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jarallax-video.min.js"></script>
+    <script src="js/default/cookiealert.js"></script>
+    <script src="js/default/jquery.passwordstrength.js"></script>
+    <script src="js/default/mail.js"></script>
+    <script src="js/default/active.js"></script>
+  </body>
+</html>
